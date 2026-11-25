@@ -8,8 +8,9 @@ FROM node:22-alpine AS nodes
 RUN apk add --no-cache python3 make g++
 WORKDIR /opt/n8n-custom-nodes
 RUN npm init -y \
+ && npm pkg set overrides.isolated-vm=6.2.0 \
  && npm install --omit=dev --no-fund --no-audit \
-      n8n-nodes-meilisearch@0.2.0 \
+      n8n-nodes-meilisearch@0.2.1 \
       n8n-nodes-clickuplookup@1.2.0 \
       n8n-nodes-magento-rest@2.0.2 \
       n8n-nodes-suitetalk-tba@0.1.1 \

@@ -5,7 +5,7 @@ n8n-01 (192.168.1.151) had empty `~/.n8n/nodes` — packages from npm, not the L
 
 | Package | Pin |
 |---------|-----|
-| n8n-nodes-meilisearch | 0.2.0 |
+| n8n-nodes-meilisearch | 0.2.1 |
 | n8n-nodes-clickuplookup | 1.2.0 |
 | n8n-nodes-magento-rest | 2.0.2 |
 | n8n-nodes-suitetalk-tba | 0.1.1 |
